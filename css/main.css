@@ -1,0 +1,243 @@
+/* HTML5  boilerplate 
+------------------------------------------------------------------*/
+
+html, button, input, select, textarea { color: #222; }
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Default Typography 
+------------------------------------------------------------------*/
+
+body {	
+    font:normal 13px/1.4em Arial, Helvetica, sans-serif;
+    color:#111;
+}
+
+h1, h2, h3, h4 {color:#111;}
+
+h1 {font:normal 42px/1em Arial, Helvetica, sans-serif; margin:0 0 .5em 0;}
+h2 {font:normal 36px/1em Arial, Helvetica, sans-serif; margin:0 0 .5em 0; }
+h3 {font:normal 24px/1em Arial, Helvetica, sans-serif; margin:0 0 5px 0; }
+h4 {font:normal 13px/1.231em Arial, Helvetica, sans-serif; margin:0 0 .25em 0;}
+
+p {margin:0 0 1.5em 0;}
+
+a {color:#027c85; text-decoration:none;}
+a:hover {color: #027c85; text-decoration:underline;}
+
+ul {margin-top:0; padding-left:16px; margin-bottom:1.5em;}
+ul li {margin-bottom:5px;}
+
+ul.menu,
+ul.menu li, 
+ul.sub-menu,
+ul.sub-menu li {margin:0; padding:0; list-style:none;}
+
+ul.menu li.last {margin-right:0 !important; padding-right:0 !important; border-right:none !important;}
+
+img {vertical-align: middle;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+i.icon {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display:inline-block;
+}
+
+.lt-ie8 a i.icon {
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+  height:15px;
+}
+
+
+/* Layout
+------------------------------------------------------------------*/
+.wrapper{}
+
+.container {width:100%;}
+.container .inner {width:80%; margin:0 auto; position:relative;}
+
+
+
+/* Header
+------------------------------------------------------------------*/
+
+#header {background:#eee; padding:20px 0; text-align:center; }
+
+
+/* Slider
+------------------------------------------------------------------*/
+
+#slider {position:relative; z-index:0;}
+
+#slider .next-button, 
+#slider .prev-button {
+	display:block; 
+	position:absolute; 
+	z-index:100; 
+	width:17px; 
+	height:32px; 
+	top:50%;
+	margin-top:-16px;
+}
+
+#slider .next-button {right:5px; background:url("../images/icons/right-arrow.png") no-repeat;} 
+#slider .prev-button {left:5px; background:url("../images/icons/left-arrow.png") no-repeat;}
+
+#slider .slide-container {overflow:hidden;}
+#slider .slide-container .slide {display:none; float:left; width:100%;}
+#slider .slide-container .slide img {width:100%;}
+
+
+#slider-nav {margin-bottom:10px; text-align:center;}
+#slider-nav ul {overflow:hidden;}
+#slider-nav ul li {display:inline-block; width:11px; height:10px; margin-right:2px;}
+#slider-nav ul li a {display:block; width:11px; height:10px; background:url("../images/icons/slider-nav.png") no-repeat 0 0;}
+#slider-nav ul li.active a {background-position: -12px 0;}
+
+/* Main
+------------------------------------------------------------------*/
+#main {padding:20px 0;}
+
+
+
+/* Media querieks
+------------------------------------------------------------------*/
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+	
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.container .inner {width:auto; margin:0; padding:0 15px;}		
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.container .inner {padding:0 10px;}	
+}
+
+
+/* Helpers 
+------------------------------------------------------------------*/
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
